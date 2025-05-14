@@ -1,0 +1,130 @@
+@media only screen and (max-width: 600px) {
+    .profile-card {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .profile-pic-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .username {
+        font-size: 1.5rem;
+    }
+
+    .title-tag {
+        right: -20px;
+        font-size: 0.7rem;
+        padding: 0.1rem 0.6rem;
+    }
+
+    .profile-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .stat-item:not(:last-child)::after {
+        display: none;
+    }
+
+    .stat-item {
+        padding: 0;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .floating-btn {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .profile-card {
+        max-width: 80%;
+    }
+
+    .profile-pic-wrapper {
+        width: 110px;
+        height: 110px;
+    }
+
+    .floating-btn {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .profile-card {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .profile-card {
+        max-width: 550px;
+    }
+
+    .profile-pic-wrapper {
+        width: 130px;
+        height: 130px;
+    }
+
+    .username {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .profile-container {
+        padding: 1rem;
+    }
+
+    .profile-card {
+        padding: 1.5rem;
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .profile-header {
+        margin-bottom: 0;
+        align-items: flex-start;
+    }
+
+    .profile-pic-container {
+        margin-bottom: 1rem;
+    }
+
+    .profile-bio {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .bio-divider {
+        justify-content: flex-start;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    .floating-btn {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi) {
+    .profile-card {
+        border: 0.5px solid rgba(58, 134, 255, 0.1);
+    }
+
+    .profile-pic {
+        box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.1);
+    }
+}
